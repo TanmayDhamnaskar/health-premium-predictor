@@ -34,13 +34,13 @@ streamlit run app.py
 ## 📂 Project Structure
 ```
 Streamlit_Premium_Prediction/
-│── app.py                                             # Main Streamlit app
-│── optimized_xgb_pipeline.pkl                         # Initial XGBoost model
-│── optimized_xgb_pipeline_fixed.pkl                   # Fixed version of the model
-│── requirements.txt                                   # Dependencies
-│── InsurancePricePrediction(eda).ipynb                # Statistical Analysis(EDA)
-│── InsurancePricePrediction(Model_Pipeline_ML).ipynb  # Hypertuned Model pipeline
-└── st_env/                                            # Virtual environment (optional)
+│── app.py                                     # Main Streamlit app
+│── eda_analysis.ipynb                         # Statistical Analysis(EDA)
+│── model_pipeline.ipynb                       # Hypertuned Model pipeline 
+│── optimized_xgb_pipeline.pkl                 # XGBoost model
+│── README.md                                  # Project documentation
+│── requirements.txt                           # Dependencies
+└── st_env/                                    # Virtual environment (optional)
 ```
 
 ## 🏗 Model Details
@@ -55,6 +55,22 @@ Streamlit_Premium_Prediction/
 - Ensure the `optimized_xgb_pipeline.pkl` file is present in the project directory.
 - For batch processing, consider modifying the script to accept CSV input.
 - Future improvements can include adding more features and enhancing model accuracy.
+
+## 📘 Alignment with Project Guidelines
+
+- ✅ **Data Source:** Used the `Insurance_Prediction` table from `Database.db`
+- ✅ **Record Split:** 
+  - 700,000 records used for training
+  - 200,000 records used for evaluation
+  - 100,000 records considered as live data (via app interface)
+- ✅ **Consistent Preprocessing:** The same preprocessing steps are applied during training and prediction using a saved pipeline (`optimized_xgb_pipeline.pkl`)
+- ✅ **Model Evaluation Metrics:**
+  - RMSE, MAE, and R² evaluated and explained in notebook `model_pipeline.ipynb`
+- ✅ **Model Used:** XGBoost Regressor (with hyperparameter tuning)
+- ✅ **User Interface:** Streamlit-based real-time prediction app
+- ✅ **Deployment Ready:** Can be extended for batch processing or API-based use
+
+> 📬 This project demonstrates end-to-end implementation from data analysis to deployment, meeting all required specifications.
 
 
 
