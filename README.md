@@ -1,5 +1,7 @@
 # Health Insurance Premium Prediction
 
+👉 **[Try the Live App](https://healthpremiumpredictor.streamlit.app/)**
+
 This project is a **Health Insurance Premium Prediction** tool built using **Streamlit** and **XGBoost**. It estimates insurance premiums based on user inputs such as age, BMI, smoking status, region, and medical history.
 
 ## 📌 Features
