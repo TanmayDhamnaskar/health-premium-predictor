@@ -11,8 +11,8 @@ This project is a **Health Insurance Premium Prediction** tool built using **Str
 ## 🛠 Installation
 ### 1. Clone the repository
 ```sh
-git clone https://github.com/TanmayDhamnaskar/insurance-premium-prediction
-cd insurance-premium-prediction
+git clone https://github.com/TanmayDhamnaskar/health-insurance-premium-prediction
+cd health-insurance-premium-prediction
 ```
 
 ### 2. Create a virtual environment (recommended)
