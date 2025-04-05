@@ -24,7 +24,7 @@ try:
     model_pipeline = joblib.load("optimized_xgb_pipeline.pkl")
     st.success("Model loaded successfully!")
 except Exception as e:
-    st.error(f"Error loading model: {e}. Make sure 'optimized_xgb_pipeline_fixed.pkl' is in the same directory.")
+    st.error(f"Error loading model: {e}. Make sure 'optimized_xgb_pipeline.pkl' is in the same directory.")
     st.stop()
 
 
