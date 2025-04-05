@@ -21,7 +21,7 @@ class LogToOriginalXGBRegressor(BaseEstimator, RegressorMixin):
 
 # Load the corrected model
 try:
-    model_pipeline = joblib.load("optimized_xgb_pipeline_fixed.pkl")
+    model_pipeline = joblib.load("optimized_xgb_pipeline.pkl")
     st.success("Model loaded successfully!")
 except Exception as e:
     st.error(f"Error loading model: {e}. Make sure 'optimized_xgb_pipeline_fixed.pkl' is in the same directory.")
