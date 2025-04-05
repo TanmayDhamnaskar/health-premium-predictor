@@ -49,7 +49,7 @@ Streamlit_Premium_Prediction/
 - Features used:
   - Age, Gender, BMI, Smoking Status, Region
   - Medical & Family History, Exercise Frequency, Occupation, Coverage Level
-- Log transformation applied for target variable
+- **Log transformation applied to the target variable:** A log transformation is applied to the target variable (insurance premium) to stabilize the variance and improve model performance. After the model makes predictions, the results are converted back to the original scale (i.e., from log-transformed predictions to the actual premium amounts).
 
 ## 📑 Notes
 - Ensure the `optimized_xgb_pipeline.pkl` file is present in the project directory.
